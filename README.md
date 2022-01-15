@@ -1,3 +1,5 @@
 "# monesa-project" 
-this is web site made with bootstrap,scss,html5,javascript
-progect was made for study goals
+This is simple web site made with :
+bootstrap 5, sass, html5, javascript 
+progect was made for studying goals
+progect is uncommercial
