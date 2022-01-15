@@ -1,0 +1,224 @@
+html body .container {
+  max-width: 1020px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+header {
+  background: #884B8B;
+  height: 63px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header p {
+  color: white;
+  margin: 0;
+}
+
+.presentation-section {
+  margin-top: 33px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.presentation-section .presentation-section-anchors {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.presentation-section .presentation-section-anchors a {
+  text-decoration: none;
+  color: grey;
+}
+.presentation-section .presentation-section-anchors a:hover {
+  color: black;
+}
+.presentation-section .presentation-section-anchors .anchors-centering {
+  margin-top: 60px;
+}
+.presentation-section .presentation-section-slider-slide img {
+  width: 985px;
+}
+.presentation-section .presentation-section-end-logo {
+  margin-top: 80px;
+}
+
+.types-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 21px;
+}
+.types-section p {
+  font-size: 32px;
+}
+.types-section .types-section-type {
+  border: solid 15px #FBE5AE;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  background: white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all ease 0.5s;
+}
+.types-section .types-section-type span svg {
+  position: relative;
+  transition: all ease 0.5s;
+}
+.types-section .types-section-type:hover {
+  border: 30px #FBE5AE solid;
+}
+.types-section .types-section-type:hover span svg {
+  left: 5px;
+}
+.types-section .types-section-type strong {
+  font-size: 24px;
+  font-weight: 700;
+}
+.types-section .odd-type {
+  border: 15px #F1E2F7 solid;
+}
+.types-section .odd-type:hover {
+  border: 30px #F1E2F7 solid;
+}
+.types-section .presentation-section-end-logo {
+  margin-top: 110px;
+}
+
+.products-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+.products-section > p {
+  font-size: 24px;
+}
+.products-section-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.products-section-container img {
+  width: 218px;
+}
+.products-section .presentation-section-end-logo {
+  margin-top: 25px;
+}
+
+.about-me-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 63px;
+}
+.about-me-section > p {
+  font-size: 24px;
+}
+.about-me-section-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.about-me-section-description-article {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.about-me-section-description-article span {
+  font-size: 18px;
+  display: inline-block;
+  color: #575757;
+}
+.about-me-section-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.about-me-section .presentation-section-end-logo {
+  margin-top: 70px;
+}
+
+.contacts-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.contacts-section.container {
+  max-width: 880px;
+}
+.contacts-section > P {
+  font-size: 32px;
+}
+.contacts-section-inf {
+  border: 10px solid #F1E2F7;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.contacts-section-inf-part {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.contacts-section-inf-part strong {
+  font-size: 22px;
+}
+.contacts-section-inf-part p {
+  margin: 0;
+}
+
+.footer {
+  background: #884B8B;
+  height: 63px;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.footer-container a svg {
+  background: #884B8B;
+  transition: all 0.5s ease;
+}
+.footer-container a svg:hover {
+  background: white;
+}
+.footer-container a svg:hover path {
+  color: #884B8B;
+}
+.footer-container span {
+  color: white;
+  margin: 0;
+}
+/*# sourceMappingURL=main.css.map */
