@@ -106,14 +106,6 @@ header p {
 .products-section > p {
   font-size: 24px;
 }
-.products-section-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.products-section-container img {
-  width: 218px;
-}
 .products-section .presentation-section-end-logo {
   margin-top: 25px;
 }
