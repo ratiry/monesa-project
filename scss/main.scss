@@ -23,6 +23,7 @@ header{
   & p{
     color:white;
     margin:0;
+    text-align:center;
   }
 }
 
@@ -60,6 +61,7 @@ header{
   }
   & p{
     font-size:32px;
+    text-align:center;
   }
   & &-type{
     border:solid 15px #FBE5AE;
@@ -125,6 +127,7 @@ header{
     @include flex-column(center);
     &-article{
       margin-top:20px;
+      text-align:center;
       @include flex-column(center);
       & span{
         font-size:18px;
@@ -149,6 +152,7 @@ header{
   }
   &>P{
     font-size:32px;
+    text-align:center;
   }
   &-inf{
     border: 10px solid #F1E2F7;
@@ -160,9 +164,11 @@ header{
       margin-bottom:30px;
       & strong{
         font-size:22px;
+        text-align:center;
       }
       & p{
         margin:0;
+        text-align:center;
       }
     }
   }
@@ -170,28 +176,5 @@ header{
 .footer{
   background: #884B8B;
   height:63px;
-  max-width:100%;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  margin-top:50px;
-  &-container{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:space-between;
-    & a svg{
-      background:#884B8B;
-      transition:all 0.5s ease;
-      &:hover{
-        background:white;
-        & path{
-          color:#884B8B;
-        }
-      }
-    }
-    & span{
-      color:white;
-      margin:0;
-    }
-  }
+
 }

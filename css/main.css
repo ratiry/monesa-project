@@ -19,6 +19,7 @@ header {
 header p {
   color: white;
   margin: 0;
+  text-align: center;
 }
 
 .presentation-section {
@@ -60,6 +61,7 @@ header p {
 }
 .types-section p {
   font-size: 32px;
+  text-align: center;
 }
 .types-section .types-section-type {
   border: solid 15px #FBE5AE;
@@ -134,6 +136,7 @@ header p {
 }
 .about-me-section-description-article {
   margin-top: 20px;
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -167,6 +170,7 @@ header p {
 }
 .contacts-section > P {
   font-size: 32px;
+  text-align: center;
 }
 .contacts-section-inf {
   border: 10px solid #F1E2F7;
@@ -186,37 +190,15 @@ header p {
 }
 .contacts-section-inf-part strong {
   font-size: 22px;
+  text-align: center;
 }
 .contacts-section-inf-part p {
   margin: 0;
+  text-align: center;
 }
 
 .footer {
   background: #884B8B;
   height: 63px;
-  max-width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 50px;
-}
-.footer-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.footer-container a svg {
-  background: #884B8B;
-  transition: all 0.5s ease;
-}
-.footer-container a svg:hover {
-  background: white;
-}
-.footer-container a svg:hover path {
-  color: #884B8B;
-}
-.footer-container span {
-  color: white;
-  margin: 0;
 }
 /*# sourceMappingURL=main.css.map */
