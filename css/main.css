@@ -106,6 +106,12 @@ header p {
 .products-section > p {
   font-size: 24px;
 }
+.products-section-container {
+  padding: 50px;
+}
+.products-section-container img {
+  width: 100%;
+}
 .products-section .presentation-section-end-logo {
   margin-top: 25px;
 }

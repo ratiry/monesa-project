@@ -101,12 +101,14 @@ header{
 .products-section{
   @include flex-column(center);
   margin-top:40px;
+
   &>p{
     font-size: 24px;
   }
   &-container{
+    padding:50px;
    img{
-    //  width:218px;
+     width:100%;
    }
   }
   .presentation-section-end-logo{
