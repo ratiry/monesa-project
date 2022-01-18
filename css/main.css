@@ -226,6 +226,14 @@ header p {
 }
 
 @media screen and (max-width: 700px) {
+  .presentation-section .anchors-logo {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .presentation-section .anchors-centering {
+    display: none;
+  }
+
   .footer {
     padding: 10px;
   }
@@ -239,6 +247,8 @@ header p {
   .footer .container .footer-container-creator {
     margin-right: auto;
     margin-left: auto;
+    flex-direction: column;
+    display: flex;
   }
 }
 /*# sourceMappingURL=main.css.map */

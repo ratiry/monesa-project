@@ -203,6 +203,15 @@ header{
   }
 }
 @media screen and (max-width:700px) {
+  .presentation-section{
+    .anchors-logo{
+      margin-left:auto;
+      margin-right:auto;
+    }
+    .anchors-centering{
+      display:none;
+    }
+  }
   .footer{
     padding:10px;
     & .container{
@@ -214,6 +223,8 @@ header{
       .footer-container-creator{
         margin-right: auto;
         margin-left:auto;
+        flex-direction:column;
+        display:flex;
       }
     }
   }
