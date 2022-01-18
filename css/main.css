@@ -199,6 +199,46 @@ header p {
 
 .footer {
   background: #884B8B;
-  height: 63px;
+  min-height: 63px;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.footer .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 1139px;
+}
+.footer .container > a {
+  display: flex;
+  justify-content: center;
+}
+.footer .container p, .footer .container span, .footer .container a {
+  color: white;
+  margin-top: auto;
+  text-align: center;
+  margin-bottom: auto;
+}
+.footer .container .footer-container-creator {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+@media screen and (max-width: 700px) {
+  .footer {
+    padding: 10px;
+  }
+  .footer .container {
+    grid-template-columns: 1fr;
+  }
+  .footer .container > a {
+    grid-row-start: 0;
+    grid-row-end: 1;
+  }
+  .footer .container .footer-container-creator {
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 /*# sourceMappingURL=main.css.map */
