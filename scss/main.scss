@@ -3,6 +3,34 @@ html body .container{
   margin-left:auto;
   margin-right:auto;
 }
+@keyframes popup-appearing{
+  0%{
+    left:-10%;
+    top:-10px;
+  }
+  100%{
+    left:30%;
+    top:10px;
+  }
+}
+.popup-animation{
+  display:block !important;
+  animation-name:popup-appearing;
+  animation-duration:2s;
+  animation-fill-mode: forwards;
+
+}
+::-webkit-scrollbar{
+  background:grey;
+  &-thumb{
+    background:yellow;
+    transition :all 0.5s ease;
+    border-radius:20px;
+    &:hover{
+      background:orange;
+    }
+  }
+}
 @mixin flex-column($center){
   display:flex;
   flex-direction:column;
@@ -12,7 +40,9 @@ html body .container{
 img{
   max-width:100%;
 }
-
+section{
+  padding:10px;
+}
 header{
   background: #884B8B;
   height:63px;
@@ -56,6 +86,7 @@ header{
 .types-section{
   @include flex-column(center);
   margin-top:21px;
+  position:relative;
   &-type-container{
     
   }
@@ -207,7 +238,9 @@ header{
   max-width:606px;
   min-height:786px;
   background: #FBE5AE;
-  opacity:50%;
+  
+  position:absolute;
+  display:none;
   p,span,a{
     margin:0;
   }
