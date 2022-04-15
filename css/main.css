@@ -4,19 +4,25 @@ html body .container {
   margin-right: auto;
 }
 
+.darken {
+  background: white;
+  overflow: hidden !important;
+}
+
 @keyframes popup-appearing {
   0% {
-    left: -10%;
-    top: -10px;
+    left: -10vw;
+    top: 0vh;
   }
   100% {
-    left: 30%;
-    top: 10px;
+    left: 40vw;
+    top: 0vw;
   }
 }
 .popup-animation {
   display: block !important;
   animation-name: popup-appearing;
+  position: fixed !important;
   animation-duration: 2s;
   animation-fill-mode: forwards;
 }
@@ -260,11 +266,11 @@ header p {
 }
 
 .popup-yellow {
-  max-width: 606px;
-  min-height: 786px;
+  min-width: 606px;
+  height: 786px;
   background: #FBE5AE;
+  overflow: scroll;
   position: absolute;
-  display: none;
 }
 .popup-yellow p, .popup-yellow span, .popup-yellow a {
   margin: 0;
