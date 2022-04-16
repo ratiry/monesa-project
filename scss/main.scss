@@ -103,12 +103,14 @@ header{
       top:4%;
       button{
         width:20%;
-
         border:0;
         background:0;
         svg{
-          width:0px;
+          width:40%;
         }
+      }
+      #slider_button_next{
+        transform:scale(-1);
       }
     }
   }

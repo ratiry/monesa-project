@@ -111,7 +111,10 @@ header p {
   background: 0;
 }
 .presentation-section .presentation-section-slider .slider-arrows button svg {
-  width: 0px;
+  width: 40%;
+}
+.presentation-section .presentation-section-slider .slider-arrows #slider_button_next {
+  transform: scale(-1);
 }
 .presentation-section .presentation-section-slider-slide img {
   width: 985px;
