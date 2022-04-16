@@ -15,6 +15,7 @@ html body .container{
   display:none;
 }
 
+
 @keyframes popup-appearing{
   0%{
     top:0;
@@ -89,6 +90,26 @@ header{
     }
     & .anchors-centering{
       margin-top:60px;
+    }
+  }
+  .presentation-section-slider{
+    position:relative;
+    .slider-arrows{
+      display:flex;
+      justify-content: space-between;
+      width:100%;
+      height:100%;
+      position:absolute;
+      top:4%;
+      button{
+        width:20%;
+
+        border:0;
+        background:0;
+        svg{
+          width:0px;
+        }
+      }
     }
   }
   & &-slider-slide img{

@@ -94,6 +94,25 @@ header p {
 .presentation-section .presentation-section-anchors .anchors-centering {
   margin-top: 60px;
 }
+.presentation-section .presentation-section-slider {
+  position: relative;
+}
+.presentation-section .presentation-section-slider .slider-arrows {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 4%;
+}
+.presentation-section .presentation-section-slider .slider-arrows button {
+  width: 20%;
+  border: 0;
+  background: 0;
+}
+.presentation-section .presentation-section-slider .slider-arrows button svg {
+  width: 0px;
+}
 .presentation-section .presentation-section-slider-slide img {
   width: 985px;
 }
