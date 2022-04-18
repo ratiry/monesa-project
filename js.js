@@ -61,3 +61,12 @@ let showSlides = function(){
   slide.children[slideIndex].style.display = 'block';
 }
 showSlides(slideIndex);
+let menu_appearing_button = document.getElementById('button-menu');
+let menu_cross_button = document.getElementById('menu-cross');
+let menu = document.querySelector('.menu-container');
+menu_appearing_button.addEventListener('click',function(){
+  menu.classList.add('menu-animation');
+})
+menu_cross_button.addEventListener('click',function(){
+  menu.classList.remove('menu-animation');
+})
