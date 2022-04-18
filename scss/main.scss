@@ -15,7 +15,7 @@ html body .container{
   display:none;
 }
 .active-button-slider{
-  background:#8e7a50 !important;
+  background:#884B8B !important;
 }
 
 @keyframes popup-appearing{
@@ -119,14 +119,15 @@ header{
     }
     .slider-dots{
       position:absolute;
-      top:100%;
+      top:96%;
       align-self: center;
       .slider-dot{
         border-radius: 50%;
         height:15px;
         width:15px;
         background:none;
-        border:4px solid black;
+        border:1px solid  #884B8B;
+        margin-left:10px;
       }
     }
   }

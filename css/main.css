@@ -18,7 +18,7 @@ html body .container {
 }
 
 .active-button-slider {
-  background: #8e7a50 !important;
+  background: #884B8B !important;
 }
 
 @keyframes popup-appearing {
@@ -124,7 +124,7 @@ header p {
 }
 .presentation-section .presentation-section-slider .slider-dots {
   position: absolute;
-  top: 100%;
+  top: 96%;
   align-self: center;
 }
 .presentation-section .presentation-section-slider .slider-dots .slider-dot {
@@ -132,7 +132,8 @@ header p {
   height: 15px;
   width: 15px;
   background: none;
-  border: 4px solid black;
+  border: 1px solid #884B8B;
+  margin-left: 10px;
 }
 .presentation-section .presentation-section-slider-slide img {
   width: 985px;
