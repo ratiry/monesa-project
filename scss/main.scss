@@ -14,7 +14,9 @@ html body .container{
 .display-none{
   display:none;
 }
-
+.active-button-slider{
+  background:#8e7a50 !important;
+}
 
 @keyframes popup-appearing{
   0%{
@@ -94,6 +96,8 @@ header{
   }
   .presentation-section-slider{
     position:relative;
+    display:flex;
+    flex-direction:column;
     .slider-arrows{
       display:flex;
       justify-content: space-between;
@@ -111,6 +115,18 @@ header{
       }
       #slider_button_next{
         transform:scale(-1);
+      }
+    }
+    .slider-dots{
+      position:absolute;
+      top:100%;
+      align-self: center;
+      .slider-dot{
+        border-radius: 50%;
+        height:15px;
+        width:15px;
+        background:none;
+        border:4px solid black;
       }
     }
   }
