@@ -1,0 +1,51 @@
+@use '../variables';
+@import '../mixins';
+
+.types-section{
+  @include flex-column(center);
+  margin-top:21px;
+  position:relative;
+  &-type-container{
+    
+  }
+  & p{
+    font-size:32px;
+    text-align:center;
+  }
+  & &-type{
+    border:solid 15px variables.$secondary-color-light;
+    width:100%;
+    height:200px;
+    display:flex;
+    background:white;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    transition:all ease 0.5s;
+    & span{
+      & svg{
+        position:relative;
+        transition:all ease 0.5s;
+      }
+    }
+    &:hover{
+      border:30px variables.$secondary-color-light solid;
+      span svg{
+        left:5px;
+      }
+    }
+    & strong{
+      font-size:24px;
+      font-weight:700;
+    }
+  }
+  & .odd-type{
+    border:15px variables.$main-color-light solid;
+    &:hover{
+      border:30px variables.$main-color-light solid;
+    }
+  }
+  .menu-end-logo{
+    margin-top:110px;
+  }
+}

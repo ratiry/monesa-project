@@ -1,0 +1,29 @@
+@import '../mixins';
+
+.about-me-section{
+  @include flex-column(center);
+  margin-top:63px;
+  &>p{
+    font-size:24px;
+  }
+  &-description{
+    @include flex-column(center);
+    &-article{
+      margin-top:20px;
+      text-align:center;
+      @include flex-column(center);
+      & span{
+        font-size:18px;
+        display:inline-block;
+        color: #575757;
+      }
+    }
+  }
+  &-me{
+    @include flex-column(center);
+    margin-top:20px;
+  }
+  .menu-end-logo{
+    margin-top:70px;
+  }
+}

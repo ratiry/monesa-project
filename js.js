@@ -7,7 +7,7 @@ let types_section = document.getElementById('types');
 let types_buttons = types_section.querySelectorAll('button');
 let website_html = document.querySelector('.Website_html');
 let slider_dots_container = document.querySelector('.slider-dots');
-let slide = document.querySelector('.presentation-section-slider-slide');
+let slide = document.querySelector('.hero-section-slider-slide');
 for(let i=0;i<types_buttons.length;i++){
   types_buttons[i].addEventListener('click',function(){
     popup_yellow.classList.add('popup-animation');
