@@ -1,3 +1,4 @@
+@use 'variables';
 @import 'mixins';
 
 
@@ -36,7 +37,7 @@
         height:15px;
         width:15px;
         background:none;
-        border:1px solid  #884B8B;
+        border:1px solid  variables.$main-color;
         margin-left:10px;
       }
     }

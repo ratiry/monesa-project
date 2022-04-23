@@ -1,5 +1,7 @@
+@use 'variables';
+
 .footer{
-  background: #884B8B;
+  background: variables.$main-color;
   min-height:63px;
   margin-top:70px;
   display:flex;

@@ -1,9 +1,11 @@
+@use 'variables';
+
 .popup-yellow{
   display:none;
   max-width: 606px;
   width: 93%;
   min-width: 280px;
-  background: #FBE5AE;
+  background: variables.$secondary-color-light;
   height:606px;
   overflow:scroll;
   padding: 30px;

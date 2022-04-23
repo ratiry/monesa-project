@@ -1,3 +1,4 @@
+@use '../variables';
 @import '../mixins';
 
 .types-section{
@@ -12,7 +13,7 @@
     text-align:center;
   }
   & &-type{
-    border:solid 15px #FBE5AE;
+    border:solid 15px variables.$secondary-color-light;
     width:100%;
     height:200px;
     display:flex;
@@ -28,7 +29,7 @@
       }
     }
     &:hover{
-      border:30px #FBE5AE solid;
+      border:30px variables.$secondary-color-light solid;
       span svg{
         left:5px;
       }
@@ -39,9 +40,9 @@
     }
   }
   & .odd-type{
-    border:15px #F1E2F7 solid;
+    border:15px variables.$main-color-light solid;
     &:hover{
-      border:30px #F1E2F7 solid;
+      border:30px variables.$main-color-light solid;
     }
   }
   .menu-end-logo{

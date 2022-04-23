@@ -1,7 +1,8 @@
+@use 'variables';
 @import 'mixins';
 
 header{
-  background: #884B8B;
+  background: variables.$main-color;
   height:63px;
   width:100%;
   display:flex;
@@ -24,7 +25,7 @@ header{
 }
 
 .active-button-slider{
-  background:#884B8B !important;
+  background:variables.$main-color !important;
 }
 
 .menu-animation{
@@ -39,7 +40,7 @@ header{
   position:relative;
 
   @include flex-column(center);
-  & &-anchors{
+  &-anchors{
     display:flex;
     justify-content:space-between;
     align-items: center;
@@ -53,6 +54,9 @@ header{
     }
     & .anchors-centering{
       margin-top:60px;
+    }
+    .anchors-logo {
+      max-width: 148px;
     }
     #button-menu{
       position:absolute;

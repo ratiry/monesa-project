@@ -1,3 +1,4 @@
+@use '../variables';
 @import '../mixins';
 
 .contacts-section{
@@ -11,7 +12,7 @@
     text-align:center;
   }
   &-inf{
-    border: 10px solid #F1E2F7;
+    border: 10px solid variables.$main-color-light;
     justify-content:space-between;
     @include flex-column(center);
     &-part{
