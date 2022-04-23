@@ -1,0 +1,38 @@
+html body .container{
+  max-width:1020px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+#popup_html{
+  opacity:100% !important;
+}
+
+.Website_html .darken{
+  opacity:20%;
+  overflow:hidden !important;
+}
+
+.display-none{
+  display:none;
+}
+
+img{
+  max-width:100%;
+}
+
+section{
+  padding:10px;
+}
+
+::-webkit-scrollbar{
+  background:grey;
+  &-thumb{
+    background:yellow;
+    transition :all 0.5s ease;
+    border-radius:20px;
+    &:hover{
+      background:orange;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+@import 'mixins';
+
+
+.hero-section{
+  @include flex-column(center);
+  position:relative;
+  &-slider{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    .slider-arrows{
+      display:flex;
+      justify-content: space-between;
+      width:100%;
+      height:100%;
+      position:absolute;
+      top:4%;
+      button{
+        width:20%;
+        border:0;
+        background:0;
+        svg{
+          width:40%;
+        }
+      }
+      #slider_button_next{
+        transform:scale(-1);
+      }
+    }
+    .slider-dots{
+      position:absolute;
+      top:96%;
+      align-self: center;
+      .slider-dot{
+        border-radius: 50%;
+        height:15px;
+        width:15px;
+        background:none;
+        border:1px solid  #884B8B;
+        margin-left:10px;
+      }
+    }
+  }
+  & &-slider-slide img{
+    width:985px;
+  }
+  & &-end-logo{
+    margin-top:80px;
+  }
+}
