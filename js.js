@@ -70,3 +70,8 @@ menu_appearing_button.addEventListener('click',function(){
 menu_cross_button.addEventListener('click',function(){
   menu.classList.remove('menu-animation');
 })
+let end_logo_imgs = document.querySelectorAll('.menu-end-logo img');
+for(let i=0;i<end_logo_imgs.length;i++){
+  end_logo_imgs[i].src='./images/logo.png';
+}
+console.log(43**5);
