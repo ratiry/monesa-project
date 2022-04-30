@@ -25,47 +25,18 @@ popup_cross.addEventListener('click',function(){
   website_html.style.opacity = '100%';
 })
 
-for(let i=0;i<slide.children.length;i++){
-  let button= document.createElement('button');
-  button.classList.add('slider-dot');
-  slider_dots_container.appendChild(button);
-  button.addEventListener('click',function(){
-    equel_slide_function(i);
-  })
-}
-// End Popup
 
-// Slider
-let slideIndex = 0;
-let slider_button_next = document.getElementById('slider_button_next');
-let slider_button_previous = document.getElementById('slider_button_previous');
-slider_button_next.addEventListener('click',function(){
-  plusSlide_function(1);
-})
-slider_button_previous.addEventListener('click',function(){
-  plusSlide_function(-1);
-})
-let plusSlide_function = function(n){
-  showSlides(slideIndex +=n);
-}
-let equel_slide_function = function(n){
-  showSlides(slideIndex =n);
-}
-let showSlides = function(){
-  if(slideIndex > slide.children.length-1){
-    slideIndex =0;
-  }
-  if(slideIndex<0){
-    slideIndex =slide.children.length-1;
-  }
-  for(let i=0;i<slide.children.length;i++){
-    slide.children[i].style.display = 'none';
-    slider_dots_container.children[i].classList.remove('active-button-slider');  
-  }
-  slider_dots_container.children[slideIndex].classList.add('active-button-slider');
-  slide.children[slideIndex].style.display = 'block';
-}
-showSlides(slideIndex);
+// End Popup
+$('#hero_section_slider').slick({
+  dots: true,
+  infinite: true,
+  speed: 400,
+  slidesToShow: 1,
+  autoplay: true,
+  autoplaySpeed: 3000,
+  prevArrow: $('#slick_arrows #slider_button_previous'),
+  nextArrow: $('#slick_arrows #slider_button_next'),
+});
 // END Slider
 
 // Menu

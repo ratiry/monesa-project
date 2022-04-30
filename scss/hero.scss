@@ -2,50 +2,46 @@
 @import 'mixins';
 
 
-.hero-section{
-  @include flex-column(center);
-  position:relative;
-  &-slider{
-    position:relative;
-    display:flex;
-    flex-direction:column;
-    .slider-arrows{
-      display:flex;
-      justify-content: space-between;
-      width:100%;
-      height:100%;
-      position:absolute;
-      top:4%;
-      button{
-        width:20%;
-        border:0;
-        background:0;
-        svg{
-          width:40%;
-        }
+.hero-section {
+  margin-bottom: 55px;
+  &-slider {
+    .slick-dots {
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 1rem 0;
+      list-style-type: none;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 5px;
+      
+      li {
+        margin: 0 0.25rem;
       }
-      #slider_button_next{
-        transform:scale(-1);
-      }
-    }
-    .slider-dots{
-      position:absolute;
-      top:96%;
-      align-self: center;
-      .slider-dot{
+    
+      button {
+        display: block;
+        padding: 0;
+        border: none;
         border-radius: 50%;
-        height:15px;
-        width:15px;
-        background:none;
-        border:1px solid  variables.$main-color;
-        margin-left:10px;
+        text-indent: -9999px;
+        border: 2px solid variables.$main-color;
+        background: none;
+        opacity: .9;
+        width: 12px;
+        height: 12px;
       }
+    
+      li.slick-active button {
+        background-color: variables.$main-color;
+      }
+      
     }
-  }
-  & &-slider-slide img{
-    width:985px;
-  }
-  & &-end-logo{
-    margin-top:80px;
+
+    &-slide img {
+      max-width: 100%;
+      width: 100%;
+    }
   }
 }
