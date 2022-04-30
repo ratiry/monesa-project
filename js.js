@@ -8,6 +8,8 @@ let types_buttons = types_section.querySelectorAll('button');
 let website_html = document.querySelector('.Website_html');
 let slider_dots_container = document.querySelector('.slider-dots');
 let slide = document.querySelector('.hero-section-slider-slide');
+
+// Popup
 for(let i=0;i<types_buttons.length;i++){
   types_buttons[i].addEventListener('click',function(){
     popup_yellow.classList.add('popup-animation');
@@ -15,6 +17,7 @@ for(let i=0;i<types_buttons.length;i++){
     website_html.style.opacity = '20%';
   })
 }
+
 popup_cross.addEventListener('click',function(){
   popup_yellow.classList.add('display-none');
   popup_yellow.classList.remove('popup-animation');
@@ -30,7 +33,9 @@ for(let i=0;i<slide.children.length;i++){
     equel_slide_function(i);
   })
 }
+// End Popup
 
+// Slider
 let slideIndex = 0;
 let slider_button_next = document.getElementById('slider_button_next');
 let slider_button_previous = document.getElementById('slider_button_previous');
@@ -61,6 +66,9 @@ let showSlides = function(){
   slide.children[slideIndex].style.display = 'block';
 }
 showSlides(slideIndex);
+// END Slider
+
+// Menu
 let menu_appearing_button = document.getElementById('button-menu');
 let menu_cross_button = document.getElementById('menu-cross');
 let menu = document.querySelector('.menu-container');
@@ -70,8 +78,4 @@ menu_appearing_button.addEventListener('click',function(){
 menu_cross_button.addEventListener('click',function(){
   menu.classList.remove('menu-animation');
 })
-let end_logo_imgs = document.querySelectorAll('.menu-end-logo img');
-for(let i=0;i<end_logo_imgs.length;i++){
-  end_logo_imgs[i].src='./images/logo.png';
-}
-console.log(43**5);
+// END Menu
