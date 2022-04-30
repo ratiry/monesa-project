@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="./styles.css">
   <link rel="icon" href="./favicon/favicon.ico" type="image/x-icon">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./libraries/slick-1.8.1/slick/slick.css"/>
   <!-- Bootstrap Bundle JS (jsDelivr CDN) -->
   <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </head>
@@ -49,21 +50,16 @@
     </section>
 
     <section class="hero-section container">
-      <div class="hero-section-slider">
+      <div class="hero-section-slider" id="hero_section_slider">
         <div class="hero-section-slider-slide">
           <img src="./images/slider-img-0.png" alt="saloon">
+        </div>
+        <div class="hero-section-slider-slide">
           <img src="./images/slider-img-1.png" alt="">
+        </div>
+        <div class="hero-section-slider-slide">
           <img src="./images/slider-img-2.png" alt="">
         </div>
-        <div class="slider-arrows">
-          <button id = 'slider_button_previous'>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M9.375 233.4l128-128c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L109.3 224H480c17.69 0 32 14.31 32 32s-14.31 32-32 32H109.3l73.38 73.38c12.5 12.5 12.5 32.75 0 45.25c-12.49 12.49-32.74 12.51-45.25 0l-128-128C-3.125 266.1-3.125 245.9 9.375 233.4z"/></svg>
-          </button>
-          <button id ='slider_button_next'>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M9.375 233.4l128-128c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L109.3 224H480c17.69 0 32 14.31 32 32s-14.31 32-32 32H109.3l73.38 73.38c12.5 12.5 12.5 32.75 0 45.25c-12.49 12.49-32.74 12.51-45.25 0l-128-128C-3.125 266.1-3.125 245.9 9.375 233.4z"/></svg>
-          </button>
-        </div>
-        <div class="slider-dots"></div>
       </div>
     </section>
    
@@ -281,6 +277,8 @@
         </div>
       </div>
     </footer>
+    <script type="text/javascript" src="./libraries/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="./libraries/slick-1.8.1/slick/slick.min.js"></script>
     <script src = './js.js'></script>
   </body>
 </html>
