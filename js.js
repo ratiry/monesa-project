@@ -42,11 +42,10 @@ $('#hero_section_slider').slick({
 // Menu
 let menu_appearing_button = document.getElementById('button-menu');
 let menu_cross_button = document.getElementById('menu-cross');
-let menu = document.querySelector('.menu-container');
+let menu_anchors = document.getElementById('menu-anchors')
 menu_appearing_button.addEventListener('click',function(){
-  menu.classList.add('menu-animation');
+  menu_anchors.classList.toggle('menu-activated');
+  menu_appearing_button.classList.toggle('button-menu-is-active');
 })
-menu_cross_button.addEventListener('click',function(){
-  menu.classList.remove('menu-animation');
-})
+
 // END Menu
