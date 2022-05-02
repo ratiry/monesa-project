@@ -14,7 +14,7 @@ for(let i=0;i<types_buttons.length;i++){
   types_buttons[i].addEventListener('click',function(){
     popup_yellow.classList.add('popup-animation');
     website_html.style.overflow = 'hidden';
-    website_html.style.opacity = '20%';
+
   })
 }
 
