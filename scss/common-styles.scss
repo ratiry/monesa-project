@@ -26,13 +26,14 @@ section{
 }
 
 ::-webkit-scrollbar{
-  background:grey;
+  background:grey !important;
+  height:0;
   &-thumb{
-    background:yellow;
-    transition :all 0.5s ease;
-    border-radius:20px;
+    background:yellow !important;
+    transition :all 0.5s ease !important;
+    border-radius:20px !important;
     &:hover{
-      background:orange;
+      background:orange !important;
     }
   }
 }
