@@ -27,12 +27,17 @@ popup_cross.addEventListener('click',function(){
   website_html.style.overflow = 'scroll';
   website_html.style.opacity = '100%';
 })
-body_overlay.addEventListener('click',function(){
-  popup_yellow.classList.add('display-none');
-  popup_yellow.classList.remove('popup-animation');
-  body_overlay.classList.remove('visible');
-  website_html.style.overflow = 'scroll';
-  website_html.style.opacity = '100%';
+
+window.addEventListener('click',function(e){
+  if(!e.target.closest("#popup-yellow") & window.getComputedStyle(popup_yellow).visibility == 'visible' ){
+    console.log('something');
+    popup_yellow.classList.add('display-none');
+    popup_yellow.classList.remove('popup-animation');
+    body_overlay.classList.remove('visible');
+    website_html.style.overflow = 'scroll';
+    website_html.style.opacity = '100%';
+    key_to_close_popup = false;
+  }
 })
 
 // End Popup
