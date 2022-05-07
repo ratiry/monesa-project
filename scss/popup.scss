@@ -54,12 +54,11 @@
       }
     }
   }
-}
-
-.popup-yellow.popup-animation{
-  left:50%;
-  visibility: visible;
-  opacity:100;
+  &.popup-animation{
+    left:50%;
+    visibility: visible;
+    opacity:100;
+  }
 }
 
 .body-overlay {
@@ -70,8 +69,8 @@
   background-color: #000000;
   opacity: 0.4;
   top: 0;
-}
 
-.body-overlay.visible {
-  display: block;
+  &.visible {
+    display: block;
+  }
 }

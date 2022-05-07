@@ -14,14 +14,21 @@ header{
     text-align:center;
   }
 }
-.menu .menu-anchors.menu-activated{
-  @include flex-column(center);
-  a:not(:first-child){
-    display:block !important;
-    margin-top:30px;
+.menu {
+  .menu-anchors {
+    &.menu-activated{
+      @include flex-column(center);
+      a:not(:first-child){
+        display:block !important;
+        margin-top:30px;
+      }
+    }
+    a {
+      text-transform: uppercase;
+    }
   }
+} 
 
-}
 @keyframes menu-appearing{
   0%{
     top:-100%;
