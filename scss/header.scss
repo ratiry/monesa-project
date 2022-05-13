@@ -15,6 +15,7 @@ header{
   }
 }
 
+
 @keyframes menu-appearing{
   0%{
     top:-100%;
@@ -45,9 +46,10 @@ header{
     justify-content:space-between;
     align-items: center;
     flex-wrap:wrap;
-    & a{
+     a{
       text-decoration:none;
       color:grey;
+      text-transform:uppercase;
       &:hover{
         color:black;
       }
