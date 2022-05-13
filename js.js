@@ -39,7 +39,18 @@ window.addEventListener('click',function(e){
     key_to_close_popup = false;
   }
 })
-
+document.addEventListener('keydown',function(e){
+  console.log(e);
+  if(EventTarget.keyCode =='27' || window.getComputedStyle(popup_yellow).visibility == 'visible'){
+    console.log('something');
+    popup_yellow.classList.add('display-none');
+    popup_yellow.classList.remove('popup-animation');
+    body_overlay.classList.remove('visible');
+    website_html.style.overflow = 'scroll';
+    website_html.style.opacity = '100%';
+    key_to_close_popup = false;
+  }
+})
 // End Popup
 $('#hero_section_slider').slick({
   dots: true,
