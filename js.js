@@ -11,44 +11,41 @@ let slider_dots_container = document.querySelector('.slider-dots');
 let slide = document.querySelector('.hero-section-slider-slide');
 
 // Popup
-for(let i=0;i<types_buttons.length;i++){
-  types_buttons[i].addEventListener('click',function(){
-    popup_yellow.classList.add('popup-animation');
-    body_overlay.classList.add('visible');
-    website_html.style.overflow = 'hidden';
-
-  })
+let open_popup_function = function(){
+  popup_yellow.classList.add('popup-animation');
+  body_overlay.classList.add('visible');
+  website_html.style.overflow = 'hidden';
 }
-
-popup_cross.addEventListener('click',function(){
+let close_popup_function = function(){
   popup_yellow.classList.add('display-none');
   popup_yellow.classList.remove('popup-animation');
   body_overlay.classList.remove('visible');
   website_html.style.overflow = 'scroll';
   website_html.style.opacity = '100%';
+}
+for(let i=0;i<types_buttons.length;i++){
+  types_buttons[i].addEventListener('click',function(){
+    open_popup_function();
+  })
+}
+
+popup_cross.addEventListener('click',function(){
+  close_popup_function();
 })
 
 window.addEventListener('click',function(e){
   if(!e.target.closest("#popup-yellow") & window.getComputedStyle(popup_yellow).visibility == 'visible' ){
-    console.log('something');
-    popup_yellow.classList.add('display-none');
-    popup_yellow.classList.remove('popup-animation');
-    body_overlay.classList.remove('visible');
-    website_html.style.overflow = 'scroll';
-    website_html.style.opacity = '100%';
-    key_to_close_popup = false;
+    close_popup_function();
   }
 })
 document.addEventListener('keydown',function(e){
-  console.log(e);
   if(EventTarget.keyCode =='27' || window.getComputedStyle(popup_yellow).visibility == 'visible'){
-    console.log('something');
-    popup_yellow.classList.add('display-none');
-    popup_yellow.classList.remove('popup-animation');
-    body_overlay.classList.remove('visible');
-    website_html.style.overflow = 'scroll';
-    website_html.style.opacity = '100%';
-    key_to_close_popup = false;
+    close_popup_function();
+    document.removeEventListener('keydown',function(e){
+      if(EventTarget.keyCode =='27' || window.getComputedStyle(popup_yellow).visibility == 'visible'){
+        close_popup_function();        
+      }
+    })
   }
 })
 // End Popup

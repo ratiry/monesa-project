@@ -26,11 +26,11 @@ header{
 }
 
 .active-button-slider{
-  background:variables.$main-color !important;
+  background:variables.$main-color     ;
 }
 
 .menu-animation{
-  display:block !important;
+  display:block      ;
   animation-name:menu-appearing;
   animation-duration:1s;
   animation-fill-mode: forwards;
@@ -174,12 +174,12 @@ header{
     .menu-anchors.menu-activated{
       @include flex-column(center);
       a:not(:first-child){
-        display:block !important;
+        display:block       ;
         margin-top:30px;
       }
     }
     #button-menu{
-      display:block !important;
+      display:block    ;
     }
     .anchors-logo{
       margin-left:auto;

@@ -5,12 +5,12 @@ html body .container{
 }
 
 #popup_html{
-  opacity:100% !important;
+  opacity:100% ;
 }
 
 .Website_html .darken{
   opacity:20%;
-  overflow:hidden !important;
+  overflow:hidden ;
 }
 
 .display-none{
@@ -26,7 +26,7 @@ section{
 }
 
 ::-webkit-scrollbar{
-  background:grey !important;
+  background:grey ;
   height:0;
   &-thumb{
     background:yellow !important;

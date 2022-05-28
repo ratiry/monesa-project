@@ -4,8 +4,9 @@
   position:fixed;
   transition:all 0.4s ease;
   top:50%;
-  transform: translateY(-50%) translateX(-50%);
-  left:-1000px;
+  transform: translateY(-50%) translateX(-50%) scale(0.4);
+  // left:-1000px;
+  left:50%;
   opacity:0;
   display:block;
   visibility:hidden;
@@ -44,7 +45,7 @@
       justify-content:space-between;
       width:100%;
       margin:10px;
-      .popup_description{
+      .popup-description{
         width:calc(100% - 125px);
       }
       .price{
@@ -55,10 +56,11 @@
     }
   }
   &.popup-animation{
-    left:50%;
+    transform:scale(1) translate(-50%,-50%);
     visibility: visible;
     opacity:100;
   }
+
 }
 
 .body-overlay {
@@ -73,7 +75,4 @@
   &.visible {
     visibility: visible;
   }
-}
-#body_overlay{
-  cursor:copy;
 }
