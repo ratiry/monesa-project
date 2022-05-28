@@ -11,10 +11,30 @@ let slider_dots_container = document.querySelector('.slider-dots');
 let slide = document.querySelector('.hero-section-slider-slide');
 
 // Popup
+const onClickOutOfPopup = e => {
+  if (
+    !e.target.closest("#popup-yellow") && 
+    window.getComputedStyle(popup_yellow).visibility == 'visible')
+  {
+    close_popup_function();
+  }
+}
+
+const onKeyDown = e => {
+  if (
+    e.keyCode == '27' && 
+    window.getComputedStyle(popup_yellow).visibility == 'visible')
+  {
+    close_popup_function();        
+  }
+}
+
 let open_popup_function = function(){
   popup_yellow.classList.add('popup-animation');
   body_overlay.classList.add('visible');
   website_html.style.overflow = 'hidden';
+  window.addEventListener('click', onClickOutOfPopup);
+  window.addEventListener('keydown', onKeyDown);
 }
 let close_popup_function = function(){
   popup_yellow.classList.add('display-none');
@@ -22,6 +42,8 @@ let close_popup_function = function(){
   body_overlay.classList.remove('visible');
   website_html.style.overflow = 'scroll';
   website_html.style.opacity = '100%';
+  window.removeEventListener('click', onClickOutOfPopup);
+  window.removeEventListener('keydown', onKeyDown);
 }
 for(let i=0;i<types_buttons.length;i++){
   types_buttons[i].addEventListener('click',function(){
@@ -29,25 +51,10 @@ for(let i=0;i<types_buttons.length;i++){
   })
 }
 
-popup_cross.addEventListener('click',function(){
+popup_cross.addEventListener('click',function() {
   close_popup_function();
 })
 
-window.addEventListener('click',function(e){
-  if(!e.target.closest("#popup-yellow") & window.getComputedStyle(popup_yellow).visibility == 'visible' ){
-    close_popup_function();
-  }
-})
-document.addEventListener('keydown',function(e){
-  if(EventTarget.keyCode =='27' || window.getComputedStyle(popup_yellow).visibility == 'visible'){
-    close_popup_function();
-    document.removeEventListener('keydown',function(e){
-      if(EventTarget.keyCode =='27' || window.getComputedStyle(popup_yellow).visibility == 'visible'){
-        close_popup_function();        
-      }
-    })
-  }
-})
 // End Popup
 $('#hero_section_slider').slick({
   dots: true,
